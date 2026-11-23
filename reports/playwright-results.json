@@ -1,0 +1,770 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\playwright.config.js",
+    "rootDir": "C:/Users/Hp/Desktop/Zainab Rashid/OpenEMR_Assignment2_Automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Hp/Desktop/Zainab Rashid/OpenEMR_Assignment2_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Hp/Desktop/Zainab Rashid/OpenEMR_Assignment2_Automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\tests",
+        "snapshotDir": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://demo.openemr.io/openemr/",
+          "headless": true,
+          "screenshot": "only-on-failure",
+          "trace": "off",
+          "video": "off",
+          "actionTimeout": 15000,
+          "navigationTimeout": 30000
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e.spec.js",
+      "file": "e2e.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "E2E-01 critical workflow: login → patient search → appointment → encounter → billing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 58264,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:02:27.798Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-b54e268ff4ae47987c5b",
+          "file": "e2e.spec.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "functional.spec.js",
+      "file": "functional.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-01 @smoke @rumaisa FR-01 valid login accepts authorized credentials [EP-positive]",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "rumaisa"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28795,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:03:26.753Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-3ebbb3f76dfb5b4f620d",
+          "file": "functional.spec.js",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "TC-02 @rumaisa FR-01 invalid login is rejected [EP-negative]",
+          "ok": true,
+          "tags": [
+            "rumaisa"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27035,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:03:55.572Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-1beaf885b7c4044659fa",
+          "file": "functional.spec.js",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "TC-03 @rumaisa FR-02 register a synthetic patient [EP-positive]",
+          "ok": true,
+          "tags": [
+            "rumaisa"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28337,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:04:22.642Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-9d9d80525bfb3655f90f",
+          "file": "functional.spec.js",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "TC-04 @rumaisa FR-02 required patient name fields reject empty input [BVA-negative]",
+          "ok": true,
+          "tags": [
+            "rumaisa"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:04:50.998Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-bf9bf4b5eb609a0187f7",
+          "file": "functional.spec.js",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "TC-05 @smoke @zainab FR-03 search existing synthetic patient [EP-positive]",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "zainab"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33984,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:05:21.615Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-bb92ca439822f1813461",
+          "file": "functional.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "TC-06 @zainab FR-03 search with no-match term shows no matching record [EP-negative]",
+          "ok": true,
+          "tags": [
+            "zainab"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:05:55.616Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-3e744a1b78e210af414a",
+          "file": "functional.spec.js",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "TC-07 @zainab FR-04 create appointment with valid patient/date [EP-positive]",
+          "ok": true,
+          "tags": [
+            "zainab"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24706,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:06:22.093Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-41e21f08c1b2c928b055",
+          "file": "functional.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "TC-08 @zainab FR-04 incomplete appointment is rejected [BVA-negative]",
+          "ok": true,
+          "tags": [
+            "zainab"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22345,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:06:46.814Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-cc3848d16e9c5081ad21",
+          "file": "functional.spec.js",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "TC-09 @smoke @khadija FR-05 billing area is accessible to authorized user [EP-positive]",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "khadija"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23428,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:07:09.177Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-772cd4a2f8b1cc482f75",
+          "file": "functional.spec.js",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "TC-10 @khadija FR-05 billing rejects invalid/empty amount [BVA-negative]",
+          "ok": true,
+          "tags": [
+            "khadija"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:07:32.617Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-aad48c21f57b3f69ccc4",
+          "file": "functional.spec.js",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "TC-11 @khadija FR-06 appointment status can be updated [EP-positive]",
+          "ok": true,
+          "tags": [
+            "khadija"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:07:59.147Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-1cae34af2565cc976cbf",
+          "file": "functional.spec.js",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "TC-12 @khadija FR-06 unsupported status value is not accepted [EP-negative]",
+          "ok": true,
+          "tags": [
+            "khadija"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25891,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:08:19.497Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d29845dce6f614c30379-efe17536b629077488bc",
+          "file": "functional.spec.js",
+          "line": 106,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "nfr.spec.js",
+      "file": "nfr.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "NFR-01 @rumaisa unauthenticated patient route is protected",
+          "ok": true,
+          "tags": [
+            "rumaisa"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1102,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:08:45.408Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-db3f87433c472258ca92",
+          "file": "nfr.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "NFR-02 @zainab patient search navigation response is under 3000 ms",
+          "ok": false,
+          "tags": [
+            "zainab"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "measurement",
+                  "description": "Patient search navigation: 6833 ms; threshold: <6000 ms"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 31313,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m6000\u001b[39m\nReceived:   \u001b[31m6833\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m6000\u001b[39m\nReceived:   \u001b[31m6833\u001b[39m\n    at C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\tests\\nfr.spec.js:26:19",
+                    "location": {
+                      "file": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\tests\\nfr.spec.js",
+                      "column": 19,
+                      "line": 26
+                    },
+                    "snippet": " \u001b[90m 24 |\u001b[39m   \u001b[36mconst\u001b[39m threshold \u001b[33m=\u001b[39m \u001b[33mNumber\u001b[39m(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mTEST_PERF_THRESHOLD\u001b[39m \u001b[33m||\u001b[39m (cfg\u001b[33m.\u001b[39mbaseUrl \u001b[33m&&\u001b[39m cfg\u001b[33m.\u001b[39mbaseUrl\u001b[33m.\u001b[39mincludes(\u001b[32m'localhost'\u001b[39m) \u001b[33m?\u001b[39m \u001b[35m3000\u001b[39m \u001b[33m:\u001b[39m \u001b[35m6000\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   test\u001b[33m.\u001b[39minfo()\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'measurement'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m`Patient search navigation: ${elapsed} ms; threshold: <${threshold} ms`\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m   expect(elapsed)\u001b[33m.\u001b[39mtoBeLessThan(threshold)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m \u001b[90m// NFR-03 Usability — core navigation and visible form controls should have accessible names.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\tests\\nfr.spec.js",
+                        "column": 19,
+                        "line": 26
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m6000\u001b[39m\nReceived:   \u001b[31m6833\u001b[39m\n\n \u001b[90m 24 |\u001b[39m   \u001b[36mconst\u001b[39m threshold \u001b[33m=\u001b[39m \u001b[33mNumber\u001b[39m(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mTEST_PERF_THRESHOLD\u001b[39m \u001b[33m||\u001b[39m (cfg\u001b[33m.\u001b[39mbaseUrl \u001b[33m&&\u001b[39m cfg\u001b[33m.\u001b[39mbaseUrl\u001b[33m.\u001b[39mincludes(\u001b[32m'localhost'\u001b[39m) \u001b[33m?\u001b[39m \u001b[35m3000\u001b[39m \u001b[33m:\u001b[39m \u001b[35m6000\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   test\u001b[33m.\u001b[39minfo()\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'measurement'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m`Patient search navigation: ${elapsed} ms; threshold: <${threshold} ms`\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m   expect(elapsed)\u001b[33m.\u001b[39mtoBeLessThan(threshold)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m \u001b[90m// NFR-03 Usability — core navigation and visible form controls should have accessible names.\u001b[39m\n\u001b[2m    at C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\tests\\nfr.spec.js:26:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:08:46.524Z",
+                  "annotations": [
+                    {
+                      "type": "measurement",
+                      "description": "Patient search navigation: 6833 ms; threshold: <6000 ms"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\test-results\\nfr-NFR-02-zainab-patient--27afe-n-response-is-under-3000-ms\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\test-results\\nfr-NFR-02-zainab-patient--27afe-n-response-is-under-3000-ms\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Hp\\Desktop\\Zainab Rashid\\OpenEMR_Assignment2_Automation\\tests\\nfr.spec.js",
+                    "column": 19,
+                    "line": 26
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-f2034f1d0fbbccce5480",
+          "file": "nfr.spec.js",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "NFR-03 @khadija key patient screen controls have accessible labels",
+          "ok": true,
+          "tags": [
+            "khadija"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "measurement",
+                  "description": "Named visible controls: 1/1 (100.0%); threshold: >=80%"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-23T05:09:18.596Z",
+                  "annotations": [
+                    {
+                      "type": "measurement",
+                      "description": "Named visible controls: 1/1 (100.0%); threshold: >=80%"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11d18ec26be42a4192da-3290938f7606965fbcad",
+          "file": "nfr.spec.js",
+          "line": 30,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-23T05:02:27.114Z",
+    "duration": 439070.952,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

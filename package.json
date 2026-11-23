@@ -1,0 +1,18 @@
+{
+  "name": "openemr-sqa-assignment-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright automation suite for SQA Assignment 2",
+  "scripts": {
+    "test": "playwright test",
+    "smoke": "playwright test --grep @smoke",
+    "member:rumaisa": "playwright test --grep @rumaisa",
+    "member:zainab": "playwright test --grep @zainab",
+    "member:khadija": "playwright test --grep @khadija",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "dotenv": "^16.6.1"
+  }
+}

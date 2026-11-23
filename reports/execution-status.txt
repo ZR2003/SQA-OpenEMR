@@ -1,0 +1,20 @@
+PRE-EXECUTION STATUS — 18 November 2026
+
+Application: OpenEMR
+Test suite: 12 functional + 3 NFR + 1 E2E = 16 checks
+
+Status: NOT EXECUTED / BLOCKED pending an authorized runnable OpenEMR test instance and credentials.
+No pass/fail claims are made. No application defect is reported because the suite has not been run.
+
+Required to execute:
+1. A local or otherwise authorized OpenEMR test instance.
+2. A dedicated test account and synthetic test patient data.
+3. Values in .env (see .env.example).
+4. Review/update UI locators in src/ui.js for the installed OpenEMR version.
+5. Run npm install, npx playwright install chromium, npm test.
+
+The official public demo may reset data and is not suitable for destructive or load testing.
+Never use real patient data. Do not run tests against a production healthcare system.
+
+Smoke suite: TC-01, TC-05, TC-09 (one critical functional case per member/module).
+Regression: after a documented local change, rerun the affected test IDs and save the new report.

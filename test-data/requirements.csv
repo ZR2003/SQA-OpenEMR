@@ -1,0 +1,10 @@
+Requirement ID,Requirement,Owner,Test IDs
+FR-01,Authorized user login,Rumaisa Rafiq,TC-01;TC-02
+FR-02,Patient registration,Rumaisa Rafiq,TC-03;TC-04
+FR-03,Patient search,Zainab Rashid,TC-05;TC-06
+FR-04,Appointment scheduling,Zainab Rashid,TC-07;TC-08
+FR-05,Billing,Khadija Tul Kubra,TC-09;TC-10
+FR-06,Appointment status management,Khadija Tul Kubra,TC-11;TC-12
+NFR-01,Security,Rumaisa Rafiq,NFR-01
+NFR-02,Performance,Zainab Rashid,NFR-02
+NFR-03,Usability,Khadija Tul Kubra,NFR-03
